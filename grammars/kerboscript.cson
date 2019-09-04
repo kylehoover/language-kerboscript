@@ -65,7 +65,7 @@
   {
     'comment': 'assignment keywords'
     'name': 'keyword.operator.assignment.kerboscript'
-    'match': '\\b(?i:(set|to|lock|unlock|declare|parameter|toggle|on|off))\\b'
+    'match': '\\b(?i:(set|to|lock|unlock|declare|parameter|toggle|on|off|is))\\b'
   }
   {
     'match': '\\b(?i:(global|local|parameter))\\b'
@@ -74,7 +74,7 @@
   {
     'comment': 'support functions'
     'name': 'support.function.kerboscript'
-    'match': '\\b(?i:(add|remove|stage|clearscreen|log|copy|rename|delete|edit|run|compile|reboot|shutdown|batch|deploy))\\b'
+    'match': '\\b(?i:(add|remove|stage|clearscreen|log|copy|rename|delete|edit|run|compile|reboot|shutdown|batch|deploy|wait))\\b'
   }
   {
     'comment': 'support variables'
@@ -319,5 +319,14 @@
     'comment': 'stack structure members'
     'name': 'variable.parameter.kerboscript'
     'match': '\\:(?i:(push|pop|peek|clear|copy))\\b'
+  }
+  {
+    'comment': 'compiler directives'
+    'captures':
+      '1':
+        'name': 'keyword.control.directive.kerboscript'
+      '2':
+        'name': 'punctuation.definition.directive.kerboscript'
+    'match': '^(?i:((@)lazyglobal))\\b'
   }
 ]
