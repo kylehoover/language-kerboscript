@@ -29,7 +29,7 @@
   }
   {
     'comment': 'flow control loops'
-    'match': '\\b(?i:(for|until|from|step|do))\\b'
+    'match': '\\b(?i:(until|for|in|from|step|do))\\b'
     'name': 'keyword.control.repeat.kerboscript'
   }
   {
@@ -69,7 +69,7 @@
   }
   {
     'comment': 'assignment keywords'
-    'match': '\\b(?i:(set|to|lock|unlock|declare|parameter|toggle|on|off|is))\\b'
+    'match': '\\b(?i:(declare|to|is|parameter|set|unset|defined|lock|unlock|toggle|on|off))\\b'
     'name': 'keyword.operator.assignment.kerboscript'
   }
   {
@@ -78,7 +78,7 @@
   }
   {
     'comment': 'support functions'
-    'match': '\\b(?i:(add|remove|stage|clearscreen|log|edit|run|compile|reboot|shutdown|batch|deploy|wait))\\b'
+    'match': '\\b(?i:(add|remove|stage|clearscreen|reboot|shutdown|batch|deploy|wait))\\b'
     'name': 'support.function.kerboscript'
   }
   {
@@ -90,6 +90,11 @@
     'comment': 'support variables'
     'match': '\\b(?i:(rgb|rgba|waypoint|allwaypoints|nextnode|ship|soi|mapview|version|sessiontime|time|config|terminal|eta|addons))\\b'
     'name': 'constant.language.kerboscript'
+  }
+  {
+    'comment': 'I/O functions'
+    'match': '\\b(?i:(path|scriptpath|volume|cd|copypath|movepath|deletepath|runpath|runoncepath|exists|create|createdir|open|writejson|readjson|list|switch to|run|log|compile|edit))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'VersionInfo structure members'
@@ -295,12 +300,12 @@
   }
   {
     'comment': 'other keywords'
-    'match': '\\b(?i:(print|at|from|volume|in|all|readjson|writejson))\\b'
+    'match': '\\b(?i:(print|at|from|in|all))\\b'
     'name': 'keyword.other.kerboscript'
   }
   {
-    'name': 'storage.function.kerboscript'
     'match': '\\b(?i:(function))\\b'
+    'name': 'storage.function.kerboscript'
   }
   {
     'comment': 'terminal structure members'
