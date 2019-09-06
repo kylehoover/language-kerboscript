@@ -74,7 +74,12 @@
   {
     'comment': 'support functions'
     'name': 'support.function.kerboscript'
-    'match': '\\b(?i:(add|remove|stage|clearscreen|log|copy|rename|delete|edit|run|compile|reboot|shutdown|batch|deploy|wait))\\b'
+    'match': '\\b(?i:(add|remove|stage|clearscreen|log|edit|run|compile|reboot|shutdown|batch|deploy|wait))\\b'
+  }
+  {
+    'comment': 'deprecated support functions'
+    'name': 'invalid.deprecated.kerboscript'
+    'match': '\\b(?i:(copy|rename|delete))\\b'
   }
   {
     'comment': 'support variables'
