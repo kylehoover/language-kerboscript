@@ -98,17 +98,17 @@
   }
   {
     'comment': 'base structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(tostring|hassuffix|suffixnames|isserializable|typename|istype|inheritance))\\b'
   }
   {
     'comment': 'alt structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(apoapsis|periapsis|radar))\\b'
   }
   {
     'comment': 'eta structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(apoapsis|periapsis|transition))\\b'
   }
   {
@@ -123,7 +123,7 @@
   }
   {
     'comment': 'directional structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(vector|forevector|topvector|upvector|starvector|rightvector|inverse))'
   }
   {
@@ -132,44 +132,44 @@
     'match': '\\b(?i:(vdot|vectordotproduct|vcrs|vectorcrossproduct|vang|vectorangle|vxcl|vectorexclude))\\b'
   }
   {
-    'comment': 'vector structure member'
+    'comment': 'vector structure members'
     'match': '\\:(?i:(x|y|z|normalized|sqrmagnitude|direction|vec))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'geographical structure member'
+    'comment': 'geographical structure members'
     'match': '\\:(?i:(lat|lng|distance|terrainheight|heading|bearing|position|altitudeposition))'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'orbit structure member'
+    'comment': 'orbit structure members'
     'match': '\\:(?i:(name|apoapsis|periapsis|body|period|inclination|eccentricity|semimajoraxis|semiminoraxis|lan|longitudeofascendingnode|argumentofperiapsis|trueanomaly|meananomalyatepoch|transition|position|velocity|nextpatch|hasnextpatch))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'orbitable structure member'
+    'comment': 'orbitable structure members'
     'match': '\\:(?i:(orbit|surface|name|body|hasbody|hasorbit|hasobt|obt|up|north|prograde|srfprograde|retrograde|srfretrograde|position|velocity|distance|direction|latitude|longitude|altitude|geoposition|patches))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'atmosphere structure member'
+    'comment': 'atmosphere structure members'
     'match': '\\:(?i:(body|exists|oxygen|scale|sealevelpressure|height))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'body structure member'
+    'comment': 'body structure members'
     'match': '\\:(?i:(name|description|mass|altitude|rotationperiod|radius|mu|atm|angularvel|geopositionof|altitudeof))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'aggregateresource structure member'
+    'comment': 'aggregateresource structure members'
     'match': '\\:(?i:(name|amount|capacity|parts))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'dockingport structure member'
+    'comment': 'dockingport structure members'
     'match': '\\:(?i:(aquirerange|aquireforce|aquire|torque|reengageddistance|dockedshipname|portfacing|state|targetable))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'dockingport functions'
@@ -177,9 +177,9 @@
     'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'engine structure member'
+    'comment': 'engine structure members'
     'match': '\\:(?i:(thrustlimit|maxthrust|thrust|fuelflow|isp|flameout|ignition|allowrestart|allowshutdown|throttlelock))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'engine functions'
@@ -187,14 +187,14 @@
     'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'gimbal structure member'
+    'comment': 'gimbal structure members'
     'match': '\\:(?i:(range|responsespeed|pitchangle|yawangle|rollangle|lock))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'maneuvernode structure member'
+    'comment': 'maneuvernode structure members'
     'match': '\\:(?i:(deltav|burnvector|eta|prograde|radialout|normal|orbit))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'part structure members'
@@ -225,9 +225,9 @@
         'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'sensor structure member'
+    'comment': 'sensor structure members'
     'match': '\\:(?i:(active|type|readout|powerconsumption))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'sensor functions'
@@ -235,9 +235,9 @@
     'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'stage structure member'
+    'comment': 'stage structure members'
     'match': '\\:(?i:(ready|number|resources))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'vessel structure members'
@@ -254,24 +254,24 @@
         'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'vesselsensors structure member'
+    'comment': 'vesselsensors structure members'
     'match': '\\:(?i:(acc|pres|temp|grav|light))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'resource structure member'
+    'comment': 'resource structure members'
     'match': '\\:(?i:(name|amount|capacity|toggleable|enabled))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'waypoint structure member'
+    'comment': 'waypoint structure members'
     'match': '\\:(?i:(name|body|geoposition|position|altitude|agl|nearsurface|grounded|index|clustered))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'rgba structure member'
+    'comment': 'rgba structure members'
     'match': '\\:(?i:(r|red|g|green|b|blue|a|alpha|html|hex))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'prediction functions'
@@ -299,12 +299,12 @@
   }
   {
     'comment': 'terminal structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(width|height|reverse|visualbeep|brightness|charwidth|charheight))\\b'
   }
   {
     'comment': 'time span structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(clock|calendar|second|minute|hour|day|year|seconds))\\b'
   }
   {
@@ -314,27 +314,27 @@
   }
   {
     'comment': 'lexicon structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(add|casesensitive|case|clear|copy|dump|haskey|hasvalue|keys|values|length|remove))\\b'
   }
   {
     'comment': 'list structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(add|insert|clear|copy|sublist|join|remove))\\b'
   }
   {
     'comment': 'queue structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(push|pop|peek|clear|copy))\\b'
   }
   {
     'comment': 'range structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(start|stop|step))\\b'
   }
   {
     'comment': 'stack structure members'
-    'name': 'variable.parameter.kerboscript'
+    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(push|pop|peek|clear|copy))\\b'
   }
   {
