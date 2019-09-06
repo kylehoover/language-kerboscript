@@ -233,8 +233,17 @@
   }
   {
     'comment': 'vessel structure member'
-    'match': '\\:(?i:(control|bearing|heading|maxthrust|facing|mass|wetmass|drymass|verticalspeed|surfacespeed|airspeeed|termvelocity|shipname|name|angularmomentum|angularvel|sensors|loaded|patches|rootpart|parts|resources|partsnamed|partstitled|partstagged|partsdubbed|modulesnamed|partsingroup|modulesingroup|allpartstagged))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'match': '\\:(?i:(control|bearing|heading|maxthrust|availablethrust|facing|bounds|mass|wetmass|drymass|dynamicpressue|q|verticalspeed|groundspeed|airspeeed|termvelocity|shipname|name|status|type|starttracking|angularmomentum|angularvel|sensors|loaded|unpacked|loaddistance|isdead|patches|rootpart|controlpart|parts|dockingports|elements|resources|crewcapacity|connection|messages))\\b'
+    'captures':
+      '1':
+        'name': 'support.variable.kerboscript'
+  }
+  {
+    'comment': 'vessel structure function'
+    'match': '\\:(?i:(maxthrustat|availablethrustat|partsnamed|partsnamedpattern|partstitled|partstitledpattern|partstagged|partstaggedpattern|partsdubbed|partsdubbedpattern|modulesnamed|partsingroup|modulesingroup|allpartstagged|crew))\\b'
+    'captures':
+      '1':
+        'name': 'support.function.kerboscript'
   }
   {
     'comment': 'vesselsensors structure member'
