@@ -29,12 +29,12 @@
   }
   {
     'comment': 'flow control loops'
-    'match': '\\b(?i:(until|for|in|from|step|do))\\b'
+    'match': '\\b(?i:(until|for|in|from|step|do|wait until))\\b'
     'name': 'keyword.control.repeat.kerboscript'
   }
   {
     'comment': 'flow control statements'
-    'match': '\\b(?i:(break|preserve))\\b'
+    'match': '\\b(?i:(break|wait|preserve))\\b'
     'name': 'keyword.control.statement.kerboscript'
   }
   {
@@ -78,7 +78,7 @@
   }
   {
     'comment': 'support functions'
-    'match': '\\b(?i:(add|remove|stage|clearscreen|reboot|shutdown|batch|deploy|wait))\\b'
+    'match': '\\b(?i:(add|remove|stage|clearscreen|reboot|shutdown|batch|deploy))\\b'
     'name': 'support.function.kerboscript'
   }
   {
