@@ -348,6 +348,20 @@
     'name': 'support.variable.kerboscript'
   }
   {
+    'comment': 'Path structure members'
+    'match': '\\:(?i:(volume|segments|length|name|hasextension|extension|root|parent))\\b'
+    'captures':
+      '1':
+        'name': 'support.variable.kerboscript'
+  }
+  {
+    'comment': 'Path structure functions'
+    'match': '\\:(?i:(changename|changeextension|isparent|combine))\\b'
+    'captures':
+      '1':
+        'name': 'support.function.kerboscript'
+  }
+  {
     'comment': 'compiler directives'
     'match': '^(?i:((@)lazyglobal))\\b'
     'captures':
