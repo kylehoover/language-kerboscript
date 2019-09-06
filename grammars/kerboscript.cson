@@ -197,24 +197,32 @@
     'name': 'variable.parameter.kerboscript'
   }
   {
-    'comment': 'part structure member'
-    'match': '\\:(?i:(name|title|mass|drymass|wetmass|tag|controlfrom|stage|uid|rotation|position|facing|resources|targetable|ship|modules|allmodules|parent|hasparent|hasphysics|children))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'comment': 'part structure members'
+    'match': '\\:(?i:(name|title|mass|drymass|wetmass|tag|controlfrom|stage|cid|uid|rotation|position|facing|bounds|resources|targetable|ship|modules|allmodules|parent|hasparent|decoupler|separator|decoupledin|separatedin|hasphysics|children))\\b'
+    'captures':
+      '1':
+        'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'part functions'
-    'match': '\\:(?i:(getmodule))'
-    'name': 'support.function.kerboscript'
+    'comment': 'part structure functions'
+    'match': '\\:(?i:(getmodule|getmodulebyindex|hasmodule))'
+    'captures':
+      '1':
+        'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'partmodule structure member'
-    'match': '\\:(?i:(name|part|allfields|allevents|allactions|hasfield|hasevent|hasaction))\\b'
-    'name': 'variable.parameter.kerboscript'
+    'comment': 'partmodule structure members'
+    'match': '\\:(?i:(name|part|allfields|allfieldnames|allevents|allactions|allactionnames))\\b'
+    'captures':
+      '1':
+        'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'partmodule functions'
-    'match': '\\b(?i:(getfield|setfield|doevent|doaction))'
-    'name': 'support.function.kerboscript'
+    'comment': 'partmodule structure functions'
+    'match': '\\:(?i:(getfield|setfield|doevent|doaction|hasfield|hasevent|hasaction))'
+    'captures':
+      '1':
+        'name': 'support.function.kerboscript'
   }
   {
     'comment': 'sensor structure member'
@@ -232,14 +240,14 @@
     'name': 'variable.parameter.kerboscript'
   }
   {
-    'comment': 'vessel structure member'
+    'comment': 'vessel structure members'
     'match': '\\:(?i:(control|bearing|heading|maxthrust|availablethrust|facing|bounds|mass|wetmass|drymass|dynamicpressue|q|verticalspeed|groundspeed|airspeeed|termvelocity|shipname|name|status|type|starttracking|angularmomentum|angularvel|sensors|loaded|unpacked|loaddistance|isdead|patches|rootpart|controlpart|parts|dockingports|elements|resources|crewcapacity|connection|messages))\\b'
     'captures':
       '1':
         'name': 'support.variable.kerboscript'
   }
   {
-    'comment': 'vessel structure function'
+    'comment': 'vessel structure functions'
     'match': '\\:(?i:(maxthrustat|availablethrustat|partsnamed|partsnamedpattern|partstitled|partstitledpattern|partstagged|partstaggedpattern|partsdubbed|partsdubbedpattern|modulesnamed|partsingroup|modulesingroup|allpartstagged|crew))\\b'
     'captures':
       '1':
