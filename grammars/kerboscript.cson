@@ -23,49 +23,54 @@
     'name': 'punctuation.terminator.kerboscript'
   }
   {
-    'comment': 'flow control conditional'
+    'comment': 'flow control conditionals'
+    'match': '\\b(?i:(if|else|choose|when|then|on))\\b'
     'name': 'keyword.control.conditional.kerboscript'
-    'match': '\\b(?i:(if|else|when|then|on))\\b'
   }
   {
-    'comment': 'flow control loop'
+    'comment': 'flow control loops'
+    'match': '\\b(?i:(for|until|from|step|do))\\b'
     'name': 'keyword.control.repeat.kerboscript'
-    'match': '\\b(?i:(for|until))\\b'
   }
   {
-    'comment': 'flow control statement'
-    'name': 'keyword.control.statement.kerboscript'
+    'comment': 'flow control statements'
     'match': '\\b(?i:(break|preserve))\\b'
+    'name': 'keyword.control.statement.kerboscript'
   }
   {
-    'comment': 'boolean keyword'
-    'name': 'keyword.operator.logical.kerboscript'
+    'comment': 'boolean keywords'
     'match': '\\b(?i:(and|or|not))\\b'
+    'name': 'keyword.operator.logical.kerboscript'
   }
   {
-    'comment': 'comparison operator'
-    'name': 'keyword.operator.comparison.kerboscript'
+    'comment': 'comparison operators'
     'match': '(<\\=|>\\=|<|>|<>|\\=)'
+    'name': 'keyword.operator.comparison.kerboscript'
   }
   {
-    'comment': 'arithmetic operator'
-    'name': 'keyword.operator.arithmetic.kerboscript'
+    'comment': 'arithmetic operators'
     'match': '(\\+|\\-|\\*|/|\\^|\\(|\\))'
+    'name': 'keyword.operator.arithmetic.kerboscript'
   }
   {
     'comment': 'mathematical constants'
+    'match': '\\b(?i:(g|g0|e|pi|c|atmtokpa|kpatoatm|degtorad|radtodeg|avogadro|boltzmann|idealgas))\\b'
     'name': 'support.constant.kerboscript'
-    'match': '\\b(?i:(e|g|pi))\\b'
+  }
+  {
+    'comment': 'mathematical functions'
+    'match': '\\b(?i:(abs|ceiling|floor|ln|log10|mod|min|max|random|round|sqrt|char|unchar|sin|cos|tan|arcsin|arccos|arctan|arctan2))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'language constants'
-    'name': 'support.constant.kerboscript'
     'match': '\\b(?i:(true|false|red|green|blue|yellow|cyan|magenta|purple|white|black))\\b'
+    'name': 'support.constant.kerboscript'
   }
   {
     'comment': 'assignment keywords'
-    'name': 'keyword.operator.assignment.kerboscript'
     'match': '\\b(?i:(set|to|lock|unlock|declare|parameter|toggle|on|off|is))\\b'
+    'name': 'keyword.operator.assignment.kerboscript'
   }
   {
     'match': '\\b(?i:(global|local|parameter))\\b'
@@ -73,68 +78,68 @@
   }
   {
     'comment': 'support functions'
-    'name': 'support.function.kerboscript'
     'match': '\\b(?i:(add|remove|stage|clearscreen|log|edit|run|compile|reboot|shutdown|batch|deploy|wait))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'deprecated support functions'
-    'name': 'invalid.deprecated.kerboscript'
     'match': '\\b(?i:(copy|rename|delete))\\b'
+    'name': 'invalid.deprecated.kerboscript'
   }
   {
     'comment': 'support variables'
-    'name': 'constant.language.kerboscript'
     'match': '\\b(?i:(rgb|rgba|waypoint|allwaypoints|nextnode|ship|soi|mapview|version|sessiontime|time|config|terminal|eta|addons))\\b'
+    'name': 'constant.language.kerboscript'
   }
   {
-    'comment': 'version parameters'
-    'name': 'variable.parameter.kerboscript'
-    'match': '\\b(?i:(major|minor))'
+    'comment': 'VersionInfo structure members'
+    'match': '\\:(?i:(major|minor|patch|build))'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'bound variables'
-    'name': 'constant.language.kerboscript'
     'match': '\\b(?i:(throttle|steering|wheelthrottle|wheelsteering|ship|target|encounter|alt|heading|prograde|retrograde|facing|maxthrust|velocity|geoposition|latitude|longitude|up|north|body|angularmomentum|angularvel|angularvelocity|commrange|mass|verticalspeed|surfacespeed|airspeed|vesselname|altitude|apoapsis|periapsis|sensor|srfprograde|srfrerograde|obt|status|vesselname))\\b'
+    'name': 'constant.language.kerboscript'
   }
   {
     'comment': 'bound toggleables'
-    'name': 'constant.language.kerboscript'
     'match': '\\b(?i:(sas|rcs|gear|legs|chutes|lights|panels|brakes|abort|ag[1-9][0-9]|ag[0-9]))\\b'
+    'name': 'constant.language.kerboscript'
   }
   {
     'comment': 'base structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(tostring|hassuffix|suffixnames|isserializable|typename|istype|inheritance))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'alt structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(apoapsis|periapsis|radar))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'eta structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(apoapsis|periapsis|transition))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'list functions'
-    'name': 'support.function.kerboscript'
     'match': '\\b(?i:(list|bodies|targets|resources|parts|engines|sensors|elements|dockingports|files|volumes))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'directional functions'
-    'name': 'support.function.kerboscript'
     'match': '\\b(?i:(r|q|heading|lookdirup|angleaxis|rotatefromto))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'directional structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(vector|forevector|topvector|upvector|starvector|rightvector|inverse))'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'vector functions'
-    'name': 'support.function.kerboscript'
     'match': '\\b(?i:(vdot|vectordotproduct|vcrs|vectorcrossproduct|vang|vectorangle|vxcl|vectorexclude))\\b'
+    'name': 'support.function.kerboscript'
   }
   {
     'comment': 'vector structure members'
@@ -284,19 +289,14 @@
     'name': 'support.function.kerboscript'
   }
   {
-    'comment': 'mathematical functions'
-    'name': 'support.function.kerboscript'
-    'match': '\\b(?i:(abs|ceiling|floor|ln|log10|mod|min|max|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2))\\b'
-  }
-  {
     'comment': 'support types'
-    'name': 'support.type.kerboscript'
     'match': '\\b(?i:(v|vector|direction|latlng))\\b'
+    'name': 'support.type.kerboscript'
   }
   {
     'comment': 'other keywords'
-    'name': 'keyword.other.kerboscript'
     'match': '\\b(?i:(print|at|from|volume|in|all|readjson|writejson))\\b'
+    'name': 'keyword.other.kerboscript'
   }
   {
     'name': 'storage.function.kerboscript'
@@ -304,51 +304,51 @@
   }
   {
     'comment': 'terminal structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(width|height|reverse|visualbeep|brightness|charwidth|charheight))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'time span structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(clock|calendar|second|minute|hour|day|year|seconds))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'collection types'
-    'name': 'support.type.kerboscript'
     'match': '\\b(?i:(lexicon|list|queue|range|stack))\\b'
+    'name': 'support.type.kerboscript'
   }
   {
     'comment': 'lexicon structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(add|casesensitive|case|clear|copy|dump|haskey|hasvalue|keys|values|length|remove))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'list structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(add|insert|clear|copy|sublist|join|remove))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'queue structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(push|pop|peek|clear|copy))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'range structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(start|stop|step))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'stack structure members'
-    'name': 'support.variable.kerboscript'
     'match': '\\:(?i:(push|pop|peek|clear|copy))\\b'
+    'name': 'support.variable.kerboscript'
   }
   {
     'comment': 'compiler directives'
+    'match': '^(?i:((@)lazyglobal))\\b'
     'captures':
       '1':
         'name': 'keyword.control.directive.kerboscript'
       '2':
         'name': 'punctuation.definition.directive.kerboscript'
-    'match': '^(?i:((@)lazyglobal))\\b'
   }
 ]
